@@ -1,0 +1,32 @@
+package com.app.springdemo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+
+
+@Component
+public class CricketCoach implements Coach {
+
+	private FortuneService fortuneService;
+	
+	
+	//@Autowired
+	public  CricketCoach(FortuneService theFortuneService) {
+		// TODO Auto-generated constructor stub
+		fortuneService=theFortuneService;
+	}
+	
+	@Override
+	public String getDailyWorkout() {
+		return "Practice Fast Bowling ";		
+		
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return fortuneService.getFortune();
+	}
+
+}

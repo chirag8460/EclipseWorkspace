@@ -1,0 +1,7 @@
+package com.app.springdemo.mvc;
+
+public class Customer {
+	
+	String firstName;
+
+}

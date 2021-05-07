@@ -1,0 +1,11 @@
+package com.app.springdemo;
+
+public class BaseballCoach implements Coach {
+	
+	@Override
+	public String getDailyWorkout() {
+		return "Practice batting and HomeRuns";		
+	}
+	
+
+}

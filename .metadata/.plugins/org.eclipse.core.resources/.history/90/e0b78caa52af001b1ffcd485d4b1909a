@@ -1,0 +1,54 @@
+package com.app.springdemo.mvc;
+
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
+public class Customer {
+	
+	private String firstName;
+	@NotNull(message="is required")
+	@Size(min=1,message="is required")
+	private String lastName;
+	
+	@Min(value=0,message="must be greater than or equal to 0")
+	@Max(value=10,message="must be less than or equal to 10")
+	@NotNull(message="is required")
+	private int freePass;
+	
+
+	@Pattern(regexp="^[a-zA-Z0-9]{6}",message="only 6 chars/digits")
+	private int postaCode;
+
+
+	public Customer() {
+		
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public int getFreePass() {
+		return freePass;
+	}
+	public void setFreePass(int freePass) {
+		this.freePass = freePass;
+	}
+	public int getPostaCode() {
+		return postaCode;
+	}
+	public void setPostaCode(int postaCode) {
+		this.postaCode = postaCode;
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.app.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class HelloSpringApp {
+
+	public static void main(String[] args) {
+		//load configuration
+		ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext");
+		//retrieve bean
+		//call method
+		//close context
+		
+		
+	}
+}

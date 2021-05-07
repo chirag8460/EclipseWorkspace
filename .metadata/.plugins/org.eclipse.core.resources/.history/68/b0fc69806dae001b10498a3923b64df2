@@ -1,0 +1,20 @@
+package com.app.springdemo.mvc;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/student")
+public class StudentController {
+	
+	@RequestMapping()
+	public String showForm(Model model) {
+		//create student object
+		Student student=new Student();
+		//add object to the model
+		return "student-form";
+		}
+	
+
+}

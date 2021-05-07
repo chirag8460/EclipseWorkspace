@@ -1,0 +1,21 @@
+package com.app.springdemo;
+
+public class CricketCoach implements Coach {
+
+	private FortuneService fortuneService;
+	
+	public CricketCoach() {
+		System.out.println("cricket cc");
+	}
+	
+	@Override
+	public String getDailyWorkout() {
+		return "Dhoni in the match";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		return fortuneService.getFortune();
+	}
+
+}

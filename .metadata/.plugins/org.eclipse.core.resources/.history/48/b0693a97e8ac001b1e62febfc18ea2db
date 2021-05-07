@@ -1,0 +1,21 @@
+package com.app.springdemo;
+
+import java.util.Random;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class RandomFortuneService implements FortuneService {
+	//create an array of random fortune string
+	private String[] data= {"Apple a day keeps a doctor away","Burned by butter milk, Drink milk after Audit","All thiefs are cousing"};
+	@Override
+	public String getFortune() {
+		//pick a random string and return
+		return "Today is confusing";
+	}
+	
+	//random number generator
+	
+	private Random myRandom=new Random();
+
+}

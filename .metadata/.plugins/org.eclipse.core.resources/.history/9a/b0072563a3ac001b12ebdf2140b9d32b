@@ -1,0 +1,17 @@
+package com.app.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.sun.tools.javac.util.Context;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+	
+		ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		CricketCoach coach=context.getBean("theSillyCoach",CricketCoach.class);
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.app.springdemo;
+
+import org.springframework.stereotype.Component;
+
+@Component("theSillyCoach")
+public class CricketCoach implements Coach {
+
+	@Override
+	public String getDailyWorkout() {
+		return "Practice Fast Bowling ";
+		
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.app.springdemo;
+
+public class AnnotationBeanScopeDemo {
+
+	public static void main(String[] args) {
+
+	}
+
+}
