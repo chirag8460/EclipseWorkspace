@@ -13,9 +13,11 @@
 
 	Hello, ${customer.firstName } ${customer.lastName } 
 	<br><br>
-	You requested for ${customer.freePasses} free passes.
+	You requested for  ${customer.freePass} free passes.
 	<br><br>
-	Passes will be send at ${customer.postalCode }
+	You Enrolled in   ${customer.courseCode}
+	<br><br>
+	Passes will be send at  ${customer.postalCode }
 	<br><br>
 	
 	Thank You
